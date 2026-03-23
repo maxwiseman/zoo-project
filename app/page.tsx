@@ -58,7 +58,7 @@ function Nav() {
       <div className="mx-auto max-w-2xl px-4">
         <div className="flex h-14 items-center justify-between">
           <div className="flex flex-col leading-tight">
-            <span className="text-[10px] font-semibold uppercase tracking-widest text-primary">
+            <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
               Zoo Knoxville · Group 2
             </span>
             <span className="font-heading text-sm font-medium">
@@ -187,7 +187,7 @@ function CompareCard({
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <Card size="sm">
           <CardHeader>
-            <CardTitle className="flex items-center gap-1.5 text-primary">
+            <CardTitle className="flex items-center gap-1.5 text-primary-foreground">
               <span>🐸</span> Golden Dart Frog
             </CardTitle>
           </CardHeader>
@@ -254,7 +254,7 @@ export default function Page() {
             Zoo Knoxville Capstone · Presentations 2:30–3:00
           </Badge>
           <h1 className="font-heading mb-3 text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
-            <span className="text-primary">Golden Dart Frog</span>
+            <span className="text-primary-foreground">Golden Dart Frog</span>
             <span className="mx-2 text-muted-foreground">vs</span>
             <span>Cuban Crocodile</span>
           </h1>
@@ -293,7 +293,7 @@ export default function Page() {
                 <TableHeader>
                   <TableRow>
                     <TableHead className="text-muted-foreground">Rank</TableHead>
-                    <TableHead className="text-primary">🐸 Dart Frog</TableHead>
+                    <TableHead className="text-primary-foreground">🐸 Dart Frog</TableHead>
                     <TableHead>🐊 Crocodile</TableHead>
                   </TableRow>
                 </TableHeader>
@@ -301,7 +301,7 @@ export default function Page() {
                   {TAXONOMY.map(([rank, frog, croc]) => (
                     <TableRow key={rank}>
                       <TableCell className="text-muted-foreground">{rank}</TableCell>
-                      <TableCell className="italic text-primary/80">{frog}</TableCell>
+                      <TableCell className="italic text-primary-foreground">{frog}</TableCell>
                       <TableCell className="italic">{croc}</TableCell>
                     </TableRow>
                   ))}
@@ -374,7 +374,7 @@ export default function Page() {
           <div className="grid grid-cols-2 gap-3">
             <Card size="sm">
               <CardHeader>
-                <CardTitle className="text-xs uppercase tracking-wide text-primary">
+                <CardTitle className="text-xs uppercase tracking-wide text-primary-foreground">
                   🐸 Secondary Consumer
                 </CardTitle>
               </CardHeader>
@@ -407,7 +407,7 @@ export default function Page() {
                 <TableHeader>
                   <TableRow>
                     <TableHead className="text-muted-foreground">Behavior</TableHead>
-                    <TableHead className="text-primary">🐸 Frog</TableHead>
+                    <TableHead className="text-primary-foreground">🐸 Frog</TableHead>
                     <TableHead>🐊 Croc</TableHead>
                   </TableRow>
                 </TableHeader>
@@ -420,7 +420,7 @@ export default function Page() {
                   ].map(([b, f, c]) => (
                     <TableRow key={b}>
                       <TableCell className="text-muted-foreground">{b}</TableCell>
-                      <TableCell className="text-primary/80">{f}</TableCell>
+                      <TableCell className="text-primary-foreground">{f}</TableCell>
                       <TableCell>{c}</TableCell>
                     </TableRow>
                   ))}
@@ -640,7 +640,7 @@ export default function Page() {
                 <TableHeader>
                   <TableRow>
                     <TableHead className="text-muted-foreground">Feature</TableHead>
-                    <TableHead className="text-primary">🐸 Frog</TableHead>
+                    <TableHead className="text-primary-foreground">🐸 Frog</TableHead>
                     <TableHead>🐊 Croc</TableHead>
                   </TableRow>
                 </TableHeader>
@@ -656,7 +656,7 @@ export default function Page() {
                   ].map(([f, fr, cr]) => (
                     <TableRow key={f}>
                       <TableCell className="text-muted-foreground">{f}</TableCell>
-                      <TableCell className="text-primary/80">{fr}</TableCell>
+                      <TableCell className="text-primary-foreground">{fr}</TableCell>
                       <TableCell>{cr}</TableCell>
                     </TableRow>
                   ))}
