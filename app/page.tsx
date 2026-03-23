@@ -64,11 +64,8 @@ function Nav() {
     <nav className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur">
       <div className="mx-auto max-w-2xl px-4">
         <div className="flex h-14 items-center justify-between">
-          <div className="flex flex-col leading-tight">
-            <span className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
-              Zoo Knoxville · Group 2
-            </span>
-            <span className="font-heading text-sm font-medium">Frog vs Croc</span>
+          <div className="md:hidden flex flex-col leading-tight">
+            <span className="font-heading text-sm font-medium">Golden Dart Frog</span>
           </div>
           <div className="hidden gap-0.5 md:flex">
             {NAV_ITEMS.map((n) => (
@@ -951,7 +948,7 @@ export default function Page() {
             &ldquo;Does the conservation value provided by zoos outweigh the ethical concerns
             about keeping the species in captivity in Knoxville, TN?&rdquo;
           </p>
-          <Card>
+          <Card className="py-0">
             <CardContent className="space-y-3 pt-4 text-sm leading-relaxed text-muted-foreground">
               <p>
                 For <em>Phyllobates terribilis</em>, the case for captive programs is strong —
